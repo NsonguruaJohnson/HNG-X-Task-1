@@ -19,7 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/my-info', function (Request $request) {
+Route::get('my-info', function (Request $request) {
     // dd('ok');
     return response()->json([
         'slack_name' => $request->query('slack_name'),
