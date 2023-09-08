@@ -26,7 +26,7 @@ Route::get('/my-info', function (Request $request) {
         'current_day' => today()->format('l'),
         'utc_time' => now(),
         'track' =>  $request->query('track'),
-        'github_file_url' => 'kkk',
+        'github_file_url' => 'https://github.com/NsonguruaJohnson/HNG-X-Task-1/blob/main/routes/api.php',
         'github_repo_url' => 'https://github.com/NsonguruaJohnson/HNG-X-Task-1.git',
         '“status_code”' => 200,
     ]);
